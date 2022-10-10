@@ -28,12 +28,14 @@ function Herosection(props) {
 
           <h1 className="mb-2 mt-0">Active Sloth</h1>
           <p>
-            I'm a{" "}
+            We are{" "}
             <Typed
               strings={[
-                "Back-End developer ",
-                "Front-End developer",
-                "Photography lover",
+                "Web-Developer",
+                "Mobile-Developer",
+                "Graphic-Designer",
+                "IOS-Developer",
+                "Wordpress Websites Builder"
               ]}
               typeSpeed={80}
               backSpeed={40}
@@ -44,7 +46,7 @@ function Herosection(props) {
             </Typed>
           </p>
 
-          <ul className="social-icons light list-inline mb-0 mt-4">
+          {/* <ul className="social-icons light list-inline mb-0 mt-4">
             <li className="list-inline-item">
               <a href="!#">
                 <i className="fab fa-instagram"></i>
@@ -70,7 +72,7 @@ function Herosection(props) {
                 <i className="fab fa-pinterest-p"></i>
               </a>
             </li>
-          </ul>
+          </ul> */}
 
           <div className="mt-4">
             <Link
