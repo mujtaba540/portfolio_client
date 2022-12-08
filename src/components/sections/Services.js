@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-scroll";
 import Pagetitle from "../elements/Pagetitle";
 import Service from "../elements/Service";
+import http from "../../services/http-services"
 
 const servicesData = [
   {
@@ -34,16 +35,36 @@ const servicesData = [
 ];
 
 function Services() {
+  const [servicesData,setServicesData]=useState([])
+  const [IsLoading,setIsLoading]=useState(false)
+
+  const getServices=async ()=>{
+    let data=await http.get('services')
+    return data
+  }
+
+  useEffect(() => {
+    setIsLoading(true)
+    const fetchData=async()=>{
+      let data=await getServices()
+      console.log(data)
+      setServicesData(data.Data.data)
+      setIsLoading(false)
+    }
+    fetchData()
+
+  },[]);
+
   return (
     <section id="services">
       <div className="container">
         <Pagetitle title="Services" />
         <div className="row fix-spacing">
-          {servicesData.map((service) => (
-            <div className="col-md-4" key={service.id}>
+          {!IsLoading?servicesData.map((service) => (
+            <div className="col-md-4" key={service._id}>
               <Service service={service} />
             </div>
-          ))}
+          )):"No Data"}
         </div>
         <div className="mt-5 text-center">
           <p className="mb-0">

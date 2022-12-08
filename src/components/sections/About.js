@@ -126,7 +126,7 @@ function About() {
         <div className="spacer" data-height="70"></div>
         <div className="row fix-spacing">
           {!isLoading?counterData.map((counter) => (
-            <div key={counter.id} className="col-md-3 col-sm-6">
+            <div key={counter._id} className="col-md-3 col-sm-6">
               <TrackVisibility once>
                 <Counter counterItem={counter} />
               </TrackVisibility>

@@ -1,7 +1,8 @@
 import React from "react";
 
 function Service({ service }) {
-  const { title, content, icon, color, contentColor } = service;
+  // const { title, description, image } = service;
+  const { title, description, image, color, contentColor } = service;
   const hexToRgb = (hex) => {
     const temp = hex
       .replace(
@@ -27,9 +28,9 @@ function Service({ service }) {
         boxShadow: `0px 5px 20px 0px rgba(${hexToRgb(color)}, 0.5)`,
       }}
     >
-      <img src={icon} alt={title} />
+      <img src={image} alt={title} />
       <h3 className="mb-3 mt-0">{title}</h3>
-      <p className="mb-0">{content}</p>
+      <p className="mb-0">{description}</p>
     </div>
   );
 }

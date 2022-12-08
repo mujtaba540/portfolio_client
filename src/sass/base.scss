@@ -334,6 +334,8 @@ pre {
 
 .fix-spacing {
     margin-top: -30px;
+    display: flex;
+    justify-content: center;
 
     &>[class^="col-"] {
         margin-top: 30px;
