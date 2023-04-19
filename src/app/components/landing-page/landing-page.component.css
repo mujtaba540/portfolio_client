@@ -1,0 +1,19 @@
+/* ========= NAVBAR ================ */
+.navbar>.container-fluid{
+    justify-content: flex-end
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+/* ========== INTRO ============= */
+.intro-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
