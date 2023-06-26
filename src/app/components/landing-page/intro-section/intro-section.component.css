@@ -1,0 +1,62 @@
+/* ========= NAVBAR ================ */
+.navbar>.container {
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.collapse{
+    visibility: visible;
+}
+
+/* ========== INTRO ============= */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-body {
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.intro-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 40px;
+    text-align: center;
+    color: #21243D;
+}
+
+.intro-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #21243D;
+    max-width: 85%;
+
+}
+
+.intro-btn {
+    background: #FF6464;
+    border-radius: 2px;
+    width: 208px;
+    height: 47px;
+    color: white;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+}
