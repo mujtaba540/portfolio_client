@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --main-light-blue:#EDF7FA;
+    --main-dark-blue:#21243D;
+    --main-medium-blue:#142850;
+    --main-text-gray:#8695A4;
+}
+
 *{
     font-family: 'Heebo', sans-serif;
 }

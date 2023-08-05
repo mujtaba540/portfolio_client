@@ -1,0 +1,20 @@
+.navbar>.container {
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.collapse{
+    visibility: visible;
+}
+
+.nav-item{
+    cursor: pointer;
+}

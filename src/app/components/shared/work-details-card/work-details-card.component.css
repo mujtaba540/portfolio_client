@@ -1,0 +1,37 @@
+.section-title {
+    color: var(--main-dark-blue);
+}
+
+.card-title {
+    font-weight: 700;
+    color: (--main-dark-blue);
+}
+
+.card-bage {
+    font-weight: 900;
+    background: var(--main-medium-blue);
+    color: white;
+}
+
+.card-des {
+    color: var(--main-text-gray);
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.card-text {
+    font-weight: 400;
+    color: var(--main-dark-blue);
+
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card-container {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+}
