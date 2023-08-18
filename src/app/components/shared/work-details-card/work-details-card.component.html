@@ -1,15 +1,17 @@
 <div class="my-2">
     <h1 class="section-title text-4xl font-bold">Portfolio</h1>
-    <div class="d-flex flex-column flex-md-row gap-5 border-bottom my-4 card-container px-2 py-1" *ngFor="let item of data"
+    <div class="d-flex flex-column flex-md-row gap-5 border-bottom my-4 card-container px-2 py-1" *ngFor="let item of workList"
     (click)="showDetails()">
-      <img src="assets/images/tysk-home.jpeg" class="object-cover md:h-48 md:w-96 rounded" alt="...">
+      <img [src]="item.cardImage" class="object-cover md:h-48 md:w-96 rounded" alt="...">
       <div class="d-flex flex-column my-2">
-        <h1 class="card-title text-3xl">TYSK</h1>
+        <h1 class="card-title text-3xl">{{item.title}}</h1>
         <div class="d-flex gap-5 align-items-center my-2">
-          <p class="card-bage rounded-pill p-2 text-xs">Medical</p>
-          <p class="card-des text-xs">Web Application</p>
+          <p class="card-bage rounded-pill p-2 text-xs">{{item.projectType}}</p>
+          <p class="card-des text-xs">{{item.intro}}</p>
         </div>
-        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque odio nihil, explicabo ipsam nostrum alias quaerat expedita deleniti eum ducimus velit nobis harum neque amet laborum, aliquam odit ipsum voluptatum.</p>
-      </div>
+        <p class="card-text">
+          {{item.description}}
+        </p>
+        </div>
     </div>
   </div>

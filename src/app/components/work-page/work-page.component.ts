@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./work-page.component.css']
 })
 export class WorkPageComponent {
-
 }

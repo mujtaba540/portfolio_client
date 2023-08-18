@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Work } from 'src/app/interfaces/word.interface';
+import { list } from 'src/app/portfolio';
 
 @Component({
   selector: 'app-work-details-card',
@@ -6,9 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./work-details-card.component.css']
 })
 export class WorkDetailsCardComponent {
-  data=[
-    1,2,4
-]
+  workList:Work[] = list
+
 
 showDetails(){
   console.log("object");
