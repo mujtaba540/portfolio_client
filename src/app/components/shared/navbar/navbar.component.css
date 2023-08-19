@@ -18,3 +18,11 @@
 .nav-item{
     cursor: pointer;
 }
+
+.nav_border:hover{
+    border-bottom: 2px solid #FF6464;
+}
+.active{
+    color: black;
+    border-bottom: 2px solid #FF6464;
+}

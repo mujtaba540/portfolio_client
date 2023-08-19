@@ -42,3 +42,8 @@
     font-size: 20px;
     line-height: 29px;
 }
+
+.img-size{
+    height: 500px;
+    width: 500px;
+}

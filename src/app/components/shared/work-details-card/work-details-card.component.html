@@ -1,7 +1,7 @@
 <div class="my-2">
     <h1 class="section-title text-4xl font-bold">Portfolio</h1>
     <div class="d-flex flex-column flex-md-row gap-5 border-bottom my-4 card-container px-2 py-1" *ngFor="let item of workList"
-    (click)="showDetails()">
+    (click)="showDetails(item)">
       <img [src]="item.cardImage" class="object-cover md:h-48 md:w-96 rounded" alt="...">
       <div class="d-flex flex-column my-2">
         <h1 class="card-title text-3xl">{{item.title}}</h1>

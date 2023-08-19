@@ -5,9 +5,12 @@ export interface Work {
   intro: string;
   description: string;
   techStack: {
-    FE: string;
-    BE: string;
-    DB: string;
-  };
+    name:string,img:string
+  }[];
   images: string[];
+  heading2: string;
+  points: {
+    key:string,
+    value:string
+  }[];
 }

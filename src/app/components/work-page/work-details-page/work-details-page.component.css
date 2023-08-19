@@ -1,0 +1,27 @@
+.section-title {
+    color: var(--main-dark-blue);
+}
+
+.card-title {
+    font-weight: 700;
+    color: (--main-dark-blue);
+}
+
+.card-bage {
+    font-weight: 900;
+    background: var(--main-medium-blue);
+    color: white;
+}
+
+.card-des {
+    color: var(--main-text-gray);
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.card-text {
+    font-weight: 400;
+    color: var(--main-dark-blue);
+
+}
