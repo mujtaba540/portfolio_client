@@ -1,6 +1,4 @@
-.section-title {
-    color: white;
-}
+
 
 .bg-main-color {
     background-color: var(--main-text-color);
@@ -29,7 +27,6 @@
 
 .img-icon{
     width: 100px;
-    height: 100px;
 }
 
 .custom-fadeInLeft {

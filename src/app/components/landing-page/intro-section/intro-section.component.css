@@ -62,5 +62,20 @@
    width: 40%;
 }
 
+@keyframes upAndDown {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position */
+    }
+    50% {
+      transform: translateY(-12px); /* Middle position, move up by 10px */
+    }
+  }
+
+  .moving-image {
+    animation: upAndDown 2s ease infinite; /* Use the 'move' animation for 3 seconds, ease-in-out timing function, and repeat infinitely */
+    image-rendering: pixelated; 
+}
+
+
 
   

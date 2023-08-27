@@ -8,12 +8,45 @@ import { Component } from '@angular/core';
 })
 export class SkillsSectionComponent {
   images= [
-    "angular.png",
-    "bootstrap.png",
-    "css.png",
-    "html.png",
-    "nodejs.png",
-    "sql-server.png",
-    "js.png",
+    {
+      img:"angular.png",
+      val:"Angular"
+    },
+    {
+      img:"bootstrap.png",
+      val:"Bootstrap"
+    },
+    {
+      img:"css.png",
+      val:"CSS"
+    },
+    {
+      img:"html.png",
+      val:"HTML"
+    },
+    {
+      img:"node_2.png",
+      val:"Node.js"
+    },
+    {
+      img:"sql-server.png",
+      val:"SQL"
+    },
+    {
+      img:"js.png",
+      val:"Javascript"
+    },
+    {
+      img:"ts.png",
+      val:"Typescript"
+    },
+    {
+      img:"ex_2.png",
+      val:"Express.js"
+    },
+    {
+      img:"mongo.png",
+      val:"MongoDB"
+    },
   ]
 }

@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing-page.component';
 import { IntroSectionComponent } from './intro-section/intro-section.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { SharedModule } from '../shared/shared.module';
+import { ServicesSectionComponent } from './services-section/services-section.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { SharedModule } from '../shared/shared.module';
     LandingPageComponent,
     IntroSectionComponent,
     SkillsSectionComponent,
+    ServicesSectionComponent,
   ],
   imports: [
     CommonModule,
