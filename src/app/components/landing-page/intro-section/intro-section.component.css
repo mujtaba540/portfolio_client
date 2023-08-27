@@ -7,35 +7,30 @@
 }
 
 .intro-body {
-    /* justify-content: center; */
     align-items: center;
 }
 
 .intro-title {
     font-style: normal;
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 40px;
-    text-align: center;
-    color: #21243D;
+    color: var(--main-text-color);
 }
 
 .intro-description {
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
     line-height: 24px;
-    color: #21243D;
-    max-width: 85%;
+    color: var(--main-text-color);
 
 }
 
 .intro-btn {
-    background: #FF6464;
+    background: var(--main-text-color);
     border-radius: 2px;
     width: 208px;
     height: 47px;
-    color: white;
+    color: var(--main-color);
     border: none;
     font-style: normal;
     font-weight: 500;
@@ -47,3 +42,25 @@
     height: 500px;
     width: 500px;
 }
+
+.custom-bounceInLeft {
+    animation: bounceInLeft  1s;
+}
+.custom-bounceInRight {
+    animation: bounceInDown  1s;
+}
+
+.img_sec{
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+.bg-main-text{
+    background-color: var(--main-text-color);
+}
+
+.max-w-40{
+   width: 40%;
+}
+
+
+  

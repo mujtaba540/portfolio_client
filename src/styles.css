@@ -2,15 +2,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~animate.css/animate.css';
 
 
-:root{
-    --main-light-blue:#EDF7FA;
-    --main-dark-blue:#21243D;
-    --main-medium-blue:#142850;
-    --main-text-gray:#8695A4;
+:root {
+    --main-light-blue: #EDF7FA;
+    --main-dark-blue: #21243D;
+    --main-medium-blue: #142850;
+    --main-text-gray: #8695A4;
+
+    --main-color:#f2f5ea;
+    --main-text-color:#343943;
 }
 
-*{
+* {
     font-family: 'Heebo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--main-color) !important;
 }

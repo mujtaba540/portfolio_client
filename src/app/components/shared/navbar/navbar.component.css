@@ -4,25 +4,62 @@
 }
 
 .navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .navbar-toggler {
     border: none;
 }
 
+
 .collapse{
     visibility: visible;
+}
+
+.navbar-brand{
+    font-weight: 1.85rem !important;
 }
 
 .nav-item{
     cursor: pointer;
 }
 
+.nav-link{
+    font-weight: 600 !important;
+}
+
 .nav_border:hover{
     border-bottom: 2px solid #FF6464;
 }
-.active{
+.active .nav_border{
     color: black;
     border-bottom: 2px solid #FF6464;
 }
+
+.bg-main{
+    background-color: var(--main-color);
+}
+
+.text-color{
+    color: var(--main-text-color);
+}
+
+.img-icon{
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes upAndDown {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position */
+    }
+    50% {
+      transform: translateY(-5px); /* Middle position, move up by 10px */
+    }
+  }
+
+  .moving-image {
+    animation: upAndDown 2s ease infinite; /* Use the 'move' animation for 3 seconds, ease-in-out timing function, and repeat infinitely */
+    image-rendering: pixelated; 
+}
+
