@@ -1,7 +1,12 @@
-<div class="my-2">
-    <h1 class="section-title text-4xl font-bold">Portfolio</h1>
-    <div class="d-flex flex-column flex-md-row gap-5 border-bottom my-4 card-container px-2 py-1" *ngFor="let item of workList"
-    (click)="showDetails(item)">
+<div class="d-flex flex-column gap-2 bg-sec-color align-items-start px-2">
+  <div class="d-flex flex-column align-items-start justify-content-md-start py-4">
+    <div class="max-w-40 bg-main-color h-2 mt-1 mb-4 "></div>
+    <h1 class="font-bold text-start main-color">Selected Works</h1>
+    <p class="main-color font-medium text-base">Take a look of some of my projects I have done</p>
+  </div>
+  <div class="d-flex flex-column w-100 container py-5">
+    <div class="d-flex flex-column flex-md-row gap-5 border-bottom my-4 card-container px-2 py-1"
+      *ngFor="let item of workList" (click)="showDetails(item)">
       <img [src]="item.cardImage" class="object-cover md:h-48 md:w-96 rounded" alt="...">
       <div class="d-flex flex-column my-2">
         <h1 class="card-title text-3xl">{{item.title}}</h1>
@@ -12,6 +17,7 @@
         <p class="card-text">
           {{item.description}}
         </p>
-        </div>
+      </div>
     </div>
   </div>
+</div>
