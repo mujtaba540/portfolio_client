@@ -1,20 +1,24 @@
-<div class="d-flex flex-column gap-2 bg-sec-color align-items-start px-2">
+<div class="d-flex flex-column gap-2 bg-sec-color align-items-start px-2" id="portfolio">
   <div class="d-flex flex-column align-items-start justify-content-md-start py-4">
     <div class="max-w-40 bg-main-color h-2 mt-1 mb-4 "></div>
     <h1 class="font-bold text-start main-color">Selected Works</h1>
     <p class="main-color font-medium text-base">Take a look of some of my projects I have done</p>
   </div>
   <div class="d-flex flex-column w-100 container py-5">
-    <div class="d-flex flex-column flex-md-row gap-5 border-bottom my-4 card-container px-2 py-1"
+    <div class="row my-4 card-container px-2 py-1"
       *ngFor="let item of workList" (click)="showDetails(item)">
-      <img [src]="item.cardImage" class="object-cover md:h-48 md:w-96 rounded" alt="...">
-      <div class="d-flex flex-column my-2">
-        <h1 class="card-title text-3xl">{{item.title}}</h1>
-        <div class="d-flex gap-5 align-items-center my-2">
-          <p class="card-bage rounded-pill p-2 text-xs">{{item.projectType}}</p>
-          <p class="card-des text-xs">{{item.intro}}</p>
+      <img [src]="item.cardImage" class="col-12 col-md-6  align-self-center py-1" alt="...">
+      <div class="d-flex flex-column my-2 col-12 col-md-6 ">
+        <div class="d-flex align-items-center my-2">
+          <p class="p-2 text-xs main-color">{{item.projectType}}&nbsp; - &nbsp;{{item.intro}}</p>
         </div>
-        <p class="card-text">
+        <h1 class="card-title text-3xl main-color">{{item.title}}</h1>
+        <div class="d-flex gap-1 my-2">
+          <span class="badge rounded-pill bg-main-color sec-color"
+          *ngFor="let title of item.techStack"
+          >{{title.name | titlecase}}</span>
+        </div>
+        <p class="card-text main-color">
           {{item.description}}
         </p>
       </div>

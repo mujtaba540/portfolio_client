@@ -9,7 +9,7 @@ export const list = [
     techStack: [
       {name:'Angular',img:'assets/images/angular.png'},
       {name:'Node, express js',img:'assets/images/nodejs.png'},
-      {name:'mysql',img:'assets/images/sql-server.png'}
+      {name:'Mysql',img:'assets/images/sql-server.png'}
     ],
     images: [
       'assets/images/tysk/1.jpeg',
@@ -42,7 +42,7 @@ export const list = [
   },
   {
     title: 'MetaboardX',
-    cardImage: 'assets/images/adds/1.png',
+    cardImage: 'assets/images/adds/1_1.png',
     projectType: 'Marketing',
     intro:
       'Web Application for seamlessly placing your digital advertisement orders online',
@@ -51,13 +51,12 @@ export const list = [
       techStack: [
         {name:'Angular',img:'assets/images/angular.png'},
         {name:'Node, express js',img:'assets/images/nodejs.png'},
-        {name:'mysql',img:'assets/images/sql-server.png'}
+        {name:'Mysql',img:'assets/images/sql-server.png'}
       ],
     images: [
       'assets/images/adds/1.png',
       'assets/images/adds/2.png',
       'assets/images/adds/3.png',
-      'assets/images/adds/1.png',
       'assets/images/adds/4.png',
       'assets/images/adds/5.png',
       'assets/images/adds/6.png',

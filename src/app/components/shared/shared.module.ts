@@ -4,6 +4,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { WorkDetailsCardComponent } from './work-details-card/work-details-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -11,7 +12,8 @@ import { WorkDetailsCardComponent } from './work-details-card/work-details-card.
   declarations: [
     ContactFormComponent,
     NavbarComponent,
-    WorkDetailsCardComponent
+    WorkDetailsCardComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { WorkDetailsCardComponent } from './work-details-card/work-details-card.
   exports:[
     ContactFormComponent,
     NavbarComponent,
-    WorkDetailsCardComponent
+    WorkDetailsCardComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
