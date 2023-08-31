@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,11 +6,5 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  @ViewChild('contact') public structure !: ElementRef;
-  
-  naviagteToForm(){
-    console.log(this.structure);
-    this.structure.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
 
-  }
 }
