@@ -15,7 +15,6 @@ export const list = [
       'assets/images/tysk/1.jpeg',
       'assets/images/tysk/2.jpeg',
       'assets/images/tysk/3.jpeg',
-      'assets/images/tysk/1.jpeg',
       'assets/images/tysk/4.jpeg',
       'assets/images/tysk/5.jpeg',
       'assets/images/tysk/6.jpeg',

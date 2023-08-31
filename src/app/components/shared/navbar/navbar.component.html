@@ -9,9 +9,13 @@
     </button>
     <div class="collapse navbar-collapse my-2" id="navbarNavAltMarkup">
       <div class="navbar-nav gap-1">
-        <a class="nav-link text-color cursor-pointer " href="#aboutme">About Me</a>
-        <a class="nav-link text-color cursor-pointer " href="#services">Services</a>
-        <a class="nav-link text-color cursor-pointer " href="#portfolio">Portfolio</a>
+        <a class="nav-link text-color cursor-pointer " routerLink="/" routerLinkActive="nav-active" [routerLinkActiveOptions]="{exact:true}">
+          <span class="nav-active">
+            About Me
+          </span></a>
+        <a class="nav-link text-color cursor-pointer " routerLink="/work" routerLinkActive="nav-active" [routerLinkActiveOptions]="{exact:true}">
+          <span >Work</span>
+        </a>
         <a class="nav-link text-color cursor-pointer " href="#contact">Contact Me</a>
       </div>
     </div>

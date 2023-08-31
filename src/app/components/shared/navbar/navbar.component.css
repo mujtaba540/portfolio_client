@@ -63,3 +63,11 @@
     image-rendering: pixelated; 
 }
 
+.nav-active span{
+    border: 1px solid var(--main-text-color);
+    border-radius: 1rem;
+    background-color: var(--main-text-color);
+    color: var(--main-color);
+    padding: 0.5rem;
+}
+

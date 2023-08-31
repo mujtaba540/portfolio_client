@@ -1,59 +1,34 @@
 <div class="container">
     <app-navbar></app-navbar>
-    <div class="d-flex flex-column">
-        <h1 class="card-title text-3xl">{{item.title}}</h1>
-        <div class="d-flex gap-5 align-items-center my-2">
-            <p class="card-bage rounded-pill p-2 text-xs">{{item.projectType}}</p>
-            <p class="card-des text-xs">{{item.intro}}</p>
-        </div>
-        
-        <p>
-            {{item.description}}
-        </p>
-        <img [src]="item.images[0]" class="h-48 md:h-96 align-self-center">
-        <div class="my-2">
-            <span class="fw-bold">Technology Stack:  </span>
-            <ul>
-                <li *ngFor="let element of item.techStack">
-                 <div class="d-flex gap-2 align-items-center">
-                     <svg class="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                      </svg>
-                      <div>
-                          <span class="">{{element.name | titlecase}}</span>
-                      </div>
-                 </div>
-                </li> 
-             </ul>
-        </div>
-        <div class="bg-slate-200 my-2 d-flex align-items-center flex-column justify-content-sm-center gap-4 rounded flex-sm-row p-1">
-                <img *ngFor="let img of item.techStack" [src]="img.img" class="align-self-center">
-        </div>
-        <p >{{item.heading2}}</p>
-        <p class="m-0">This application had following features:</p>
-        <ul>
-           <li *ngFor="let point of item.points">
-            <div class="d-flex gap-2 align-items-center">
-                <svg class="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                 </svg>
-                 <div>
-                     <span class="fw-bold">{{point.key}}: </span>
-                     <span class="">{{point.value}}</span>
-                 </div>
+
+    <div class="d-flex flex-column gap-2 flex-md-row-reverse justify-content-md-between align-items-center md:py-24 px-1"
+        id="aboutme">
+        <img [src]="item.cardImage" class="img_sec w-10/12 md:w-3/6 rounded md:m-0 mt-4 moving-image">
+        <div class="d-flex flex-column align-items-start justify-content-md-start py-4">
+            <div class="max-w-40 bg-main-text h-2 mt-1 mb-4 "></div>
+            <h1 class="intro-title text-start">{{item.title}}</h1>
+            <div class="d-flex gap-1 my-2">
+                <span class="badge rounded-pill bg-main-text sec-color"
+                    *ngFor="let title of item.techStack">{{title.name | titlecase}}</span>
             </div>
-           </li> 
-        </ul>
-
-
-        
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-slate-200 p-3">
-    <div *ngFor="let img of item.images">
-        <img class="h-auto max-w-full rounded-lg" [src]="img" alt="">
+            <p class="intro-description text-start px-1">{{item.description}}</p>
+        </div>
     </div>
-</div>
 
-        
-
+    <div class="d-flex flex-column gap-2 bg-main-text align-items-start px-2">
+        <div class="d-flex flex-column align-items-start justify-content-md-start py-4">
+            <div class="max-w-40 bg-sec-color h-2 mt-1 mb-4 "></div>
+            <h1 class="intro-title text-start sec-color">Project Key Highlights</h1>
+        </div>
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center w-100 container py-5">
+            <div class="row row-cols-auto row-cols-lg-2 g-2 g-lg-3 justify-content-center">
+                <div class="col d-flex flex-column align-items-center" *ngFor="let img of item.images">
+                    <img [src]="img" class="img-icon ">
+                </div>
+            </div>
+        </div>
     </div>
+
+    <app-footer></app-footer>
+
 </div>

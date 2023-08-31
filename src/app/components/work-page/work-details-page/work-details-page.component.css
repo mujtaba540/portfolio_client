@@ -1,27 +1,90 @@
-.section-title {
-    color: var(--main-dark-blue);
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.card-title {
+.intro-body {
+    align-items: center;
+}
+
+.intro-title {
+    font-style: normal;
     font-weight: 700;
-    color: (--main-dark-blue);
+    color: var(--main-text-color);
 }
 
-.card-bage {
-    font-weight: 900;
-    background: var(--main-medium-blue);
-    color: white;
-}
-
-.card-des {
-    color: var(--main-text-gray);
-    font-weight: 400;
-    text-align: left;
+.intro-description {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--main-text-color);
 
 }
 
-.card-text {
-    font-weight: 400;
-    color: var(--main-dark-blue);
-
+.intro-btn {
+    background: var(--main-text-color);
+    border-radius: 2px;
+    width: 208px;
+    height: 47px;
+    color: var(--main-color);
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
 }
+
+.img-size{
+    height: 500px;
+    width: 500px;
+}
+
+.custom-bounceInLeft {
+    animation: bounceInLeft  1s;
+}
+.custom-bounceInRight {
+    animation: bounceInDown  1s;
+}
+
+.img_sec{
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+.bg-main-text{
+    background-color: var(--main-text-color);
+}
+.main-text{
+    color: var(--main-text-color);
+}
+.sec-color{
+    color: var(--main-color);
+}
+.bg-sec-color{
+    background-color: var(--main-color);
+}
+
+.max-w-40{
+   width: 40%;
+}
+
+@keyframes upAndDown {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position */
+    }
+    50% {
+      transform: translateY(-12px); /* Middle position, move up by 10px */
+    }
+  }
+
+  .moving-image {
+    animation: upAndDown 2s ease infinite; /* Use the 'move' animation for 3 seconds, ease-in-out timing function, and repeat infinitely */
+    image-rendering: pixelated; 
+}
+
+
+
+  
