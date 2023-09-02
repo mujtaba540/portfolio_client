@@ -1,0 +1,16 @@
+<div class="d-flex flex-column gap-2 flex-md-row-reverse justify-content-md-between align-items-center md:py-24 px-1">
+    <img [src]="item.cardImage" class="img_sec w-10/12 md:w-3/6 rounded md:m-0 mt-4 moving-image">
+    <div class="d-flex flex-column align-items-start justify-content-md-start py-4">
+        <div class="max-w-40 bg-main-color h-2 mt-1 mb-4 "></div>
+        <h1 class="intro-title text-start fw-bold">{{item.title}}</h1>
+        <p class="intro-description text-start px-1">{{item.description}}</p>
+            <div class="row row-cols-auto g-2 gap-2 justify-content-start align-items-center w-100 m-0">
+                <h3 class="intro-title text-start fw-bold m-0">Tech Stack:</h3>
+                <div class="flex-fill align-items-center justify-content-center m-0">
+                    <span class="badge rounded-pill bg-main-color sec-color p-2 mx-1 my-1" *ngFor="let title of item.techStack">
+                        {{title.name |
+                        titlecase}}</span>
+                </div>
+        </div>
+    </div>
+</div>

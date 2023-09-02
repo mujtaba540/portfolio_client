@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Work } from 'src/app/interfaces/word.interface';
+import { Work } from 'src/app/interfaces/work.interface';
 
 @Component({
   selector: 'app-work-details-page',

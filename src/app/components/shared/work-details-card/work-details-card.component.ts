@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { Work } from 'src/app/interfaces/word.interface';
+import { Work } from 'src/app/interfaces/work.interface';
 import { list } from 'src/app/portfolio';
 
 @Component({

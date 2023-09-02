@@ -1,0 +1,39 @@
+
+
+.bg-main-color {
+    background-color: var(--main-text-color);
+}
+
+.bg-secondary-color {
+    background-color: var(--main-color);
+}
+
+.color-main {
+    color: var(--main-text-color);
+}
+
+.color-sec {
+    color: var(--main-color);
+}
+
+.intro-title {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.max-w-40 {
+    width: 40%;
+}
+
+.img-icon{
+    width: 100px;
+}
+
+.custom-fadeInLeft {
+    animation: fadeInLeft 1s;
+}
+
+.card{
+    background-color: var(--main-text-color);
+    border-color: var(--main-color);
+}

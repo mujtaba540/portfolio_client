@@ -1,0 +1,42 @@
+.bg-main-color{
+    background-color: var(--main-text-color);
+}
+.main-color{
+    color: var(--main-text-color);
+}  
+.bg-sec-color{
+    background-color: var(--main-color);
+}
+.sec-color{
+    color: var(--main-color);
+} 
+
+.max-w-40{
+    width: 40%;
+ }
+
+ .intro-description{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--main-text-color);
+}
+
+@keyframes upAndDown {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position */
+    }
+    50% {
+      transform: translateY(-12px); /* Middle position, move up by 10px */
+    }
+  }
+
+  .moving-image {
+    animation: upAndDown 2s ease infinite; /* Use the 'move' animation for 3 seconds, ease-in-out timing function, and repeat infinitely */
+    image-rendering: pixelated; 
+}
+
+.badge{
+  font-size: 1rem;
+}

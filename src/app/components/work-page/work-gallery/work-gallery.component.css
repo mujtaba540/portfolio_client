@@ -1,0 +1,16 @@
+.bg-main-color{
+    background-color: var(--main-text-color);
+}
+.main-color{
+    color: var(--main-text-color);
+}  
+.bg-sec-color{
+    background-color: var(--main-color);
+}
+.sec-color{
+    color: var(--main-color);
+} 
+
+.max-w-40{
+    width: 40%;
+ }

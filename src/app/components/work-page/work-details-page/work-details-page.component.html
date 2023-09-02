@@ -1,34 +1,8 @@
-<div class="container">
+<div class="container md:mx-8 pb-4">
     <app-navbar></app-navbar>
-
-    <div class="d-flex flex-column gap-2 flex-md-row-reverse justify-content-md-between align-items-center md:py-24 px-1"
-        id="aboutme">
-        <img [src]="item.cardImage" class="img_sec w-10/12 md:w-3/6 rounded md:m-0 mt-4 moving-image">
-        <div class="d-flex flex-column align-items-start justify-content-md-start py-4">
-            <div class="max-w-40 bg-main-text h-2 mt-1 mb-4 "></div>
-            <h1 class="intro-title text-start">{{item.title}}</h1>
-            <div class="d-flex gap-1 my-2">
-                <span class="badge rounded-pill bg-main-text sec-color"
-                    *ngFor="let title of item.techStack">{{title.name | titlecase}}</span>
-            </div>
-            <p class="intro-description text-start px-1">{{item.description}}</p>
-        </div>
-    </div>
-
-    <div class="d-flex flex-column gap-2 bg-main-text align-items-start px-2">
-        <div class="d-flex flex-column align-items-start justify-content-md-start py-4">
-            <div class="max-w-40 bg-sec-color h-2 mt-1 mb-4 "></div>
-            <h1 class="intro-title text-start sec-color">Project Key Highlights</h1>
-        </div>
-        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center w-100 container py-5">
-            <div class="row row-cols-auto row-cols-lg-2 g-2 g-lg-3 justify-content-center">
-                <div class="col d-flex flex-column align-items-center" *ngFor="let img of item.images">
-                    <img [src]="img" class="img-icon ">
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <app-work-description [item]="item"></app-work-description>
+    <app-work-highlights [item]="item.points"></app-work-highlights>
+    <app-work-gallery [item]="item.images"></app-work-gallery>
     <app-footer></app-footer>
 
 </div>
