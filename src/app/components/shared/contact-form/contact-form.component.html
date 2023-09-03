@@ -37,7 +37,7 @@
             </span>
         </div>
         <button class="btn btn-submit bg-main-color sec-text-color w-50 align-self-center py-2" type="submit"
-            [disabled]="!emailForm.valid && isSubmitting">Send
+            [disabled]="!emailForm.valid || isSubmitting">Send
             <div class="spinner-border spinner-border-sm" *ngIf="isSubmitting" role="status">
                 <span class="sr-only">Loading...</span>
             </div>

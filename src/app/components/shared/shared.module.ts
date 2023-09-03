@@ -26,6 +26,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     WorkDetailsCardComponent,
     FooterComponent
-  ]
+  ],
+  providers:[]
 })
 export class SharedModule { }
