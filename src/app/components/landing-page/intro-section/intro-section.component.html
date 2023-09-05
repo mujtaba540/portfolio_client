@@ -1,13 +1,19 @@
   
   <div class="d-flex flex-column gap-2 flex-md-row-reverse align-items-center md:py-24 px-1" id="aboutme">
     <img src="assets/images/laptop_2_1.svg" class="img_sec w-10/12 md:w-5/12 lg:w-4/12 rounded mt-2 moving-image">
-    <div class="d-flex flex-column align-items-start justify-content-md-start py-4">
+    <div class="d-flex flex-column justify-content-md-start py-4">
       <div class="max-w-40 bg-main-text h-2 mt-1 mb-4 "></div>
       <h1 class="intro-title text-start">I'm Muhammad Mujtaba,</h1>
       <h1 class="intro-title">Full-Stack Developer</h1>
       <p class="intro-description text-start px-1">Full Stack JavaScript Developer with a strong proficiency in both front-end and back-end development. With a solid foundation in HTML, CSS, and JavaScript, I specialize in using popular frameworks such as Angular for front-end development. On the back end, I have expertise in Node.js and Express.js, along with experience in working with databases like MongoDB and MySQL.</p>
-      <a href="#contact">
-        <button class="intro-btn align-self-center align-self-md-start">LET'S TALK</button>
-      </a>
+      <div class="d-flex gap-2 flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start">
+        <a href="#contact">
+          <button class="intro-btn align-self-center align-self-md-start">LET'S TALK</button>
+        </a>
+        <a (click)="downloadCV()">
+          <button class="csv-btn align-self-center align-self-md-start">GET MY RESUME</button>
+        </a>
+      </div>
     </div>
   </div>
+

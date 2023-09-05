@@ -7,6 +7,7 @@ import { IntroSectionComponent } from './intro-section/intro-section.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { SharedModule } from '../shared/shared.module';
 import { ServicesSectionComponent } from './services-section/services-section.component';
+import { HttpClientModule } from  '@angular/common/http';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ServicesSectionComponent } from './services-section/services-section.co
   imports: [
     CommonModule,
     LandingPageRoutingModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ]
 })
 export class LandingPageModule { }
