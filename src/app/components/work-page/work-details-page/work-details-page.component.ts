@@ -15,6 +15,7 @@ export class WorkDetailsPageComponent {
         this.item =history.state.data
       }
     })
+    window.scrollTo(0, 0);
   }
     
   responsiveOptions!: {breakpoint:string,numVisible:number}[];
