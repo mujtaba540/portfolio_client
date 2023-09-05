@@ -28,7 +28,7 @@
 .intro-btn {
     background: var(--main-text-color);
     border-radius: 2px;
-    width: 208px;
+    width: 215px;
     height: 47px;
     color: var(--main-color);
     border: none;
@@ -41,7 +41,7 @@
 .csv-btn {
     background: var(--main-color);
     border-radius: 2px;
-    width: 208px;
+    width: 215px;
     height: 47px;
     color: var(--main-text-color);
     border: none;
@@ -50,6 +50,12 @@
     font-size: 20px;
     line-height: 29px;
     border: 1px solid var(--main-text-color);
+}
+
+.csv-btn:hover{
+    background: var(--main-text-color);
+    color: var(--main-color);
+
 }
 
 .img-size{

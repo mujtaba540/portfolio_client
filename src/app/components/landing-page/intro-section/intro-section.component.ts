@@ -8,13 +8,16 @@ import { saveAs } from 'file-saver';
   styleUrls: ['./intro-section.component.css']
 })
 export class IntroSectionComponent {
+  isLoading!:boolean;
   constructor(private http:HttpClient){}
   
   downloadCV(){
-    const fileUrl = 'assets/pdf/Mujtaba-CV.pdf'; // Replace with the actual file name and extension
+    this.isLoading=true
+    const fileUrl = 'assets/pdf/Mujtaba-CV.pdf';
     this.http.get(fileUrl, { responseType: 'blob' }).subscribe((response: Blob) => {
       const blob = new Blob([response], { type: 'application/pdf' });
-      saveAs(blob, 'Mujtaba-CV.pdf'); // Specify the desired PDF file name
+      saveAs(blob, 'Mujtaba-resume.pdf');
+      this.isLoading=false
     });
 
   }

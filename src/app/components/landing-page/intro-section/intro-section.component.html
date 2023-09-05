@@ -1,5 +1,5 @@
   
-  <div class="d-flex flex-column gap-2 flex-md-row-reverse align-items-center md:py-24 px-1" id="aboutme">
+  <div class="d-flex flex-column gap-2 flex-lg-row-reverse align-items-center md:py-24 px-1" id="aboutme">
     <img src="assets/images/laptop_2_1.svg" class="img_sec w-10/12 md:w-5/12 lg:w-4/12 rounded mt-2 moving-image">
     <div class="d-flex flex-column justify-content-md-start py-4">
       <div class="max-w-40 bg-main-text h-2 mt-1 mb-4 "></div>
@@ -11,7 +11,11 @@
           <button class="intro-btn align-self-center align-self-md-start">LET'S TALK</button>
         </a>
         <a (click)="downloadCV()">
-          <button class="csv-btn align-self-center align-self-md-start">GET MY RESUME</button>
+          <button class="csv-btn align-self-center align-self-md-start">GET MY RESUME
+            <div class="spinner-border mx-1 spinner-border-sm" *ngIf="isLoading"  role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </button>
         </a>
       </div>
     </div>
